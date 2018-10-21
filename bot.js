@@ -29,12 +29,6 @@ var servers = {};
 /////////////////////////
 ////////////////////////
 
-client.on('message', message =>{
-  if(message.content.startsWith('join')){
-    const voiceChannel = message.member.voiceChannel
-    voiceChannel.join();
-    message.channel.send("تم الأتصال بالروم الصوتي")
-}})
 
 const devs = ['422829377139638273' , '' , '' , ''];
 const adminprefix = "!";
