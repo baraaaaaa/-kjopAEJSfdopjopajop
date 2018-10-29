@@ -22,7 +22,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "3";
+const prefix = "a";
 
 var servers = {};
 
@@ -30,7 +30,7 @@ var servers = {};
 ////////////////////////
 
 
-const devs = ['422829377139638273' , '' , '' , ''];
+const devs = ['476518277875761153' , '' , '' , ''];
 const adminprefix = "!";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
@@ -343,7 +343,7 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === '3help') {
+    if (message.content === 'ahelp') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت (!)**')
@@ -377,7 +377,7 @@ client.on('message', message => {
 
 
 client.on('message', msg => {
- if (msg.content === "3help") {
+ if (msg.content === "ahelp") {
 msg.channel.send('**Check your `Privat` To see the `commands` 🎶**');
 msg.react('💌')
  msg.author.sendMessage(`
@@ -424,7 +424,7 @@ ${prefix}\`\ setname \`\ - change the bot name
 
 client.on('message', msg => {
 
-    if (msg.content == '3join') {
+    if (msg.content == 'ajoin') {
         if (msg.member.voiceChannel) {
 
      if (msg.member.voiceChannel.joinable) {
@@ -434,7 +434,7 @@ client.on('message', msg => {
 }
 })
 client.on('ready', () => {
-    client.channels.get("486311876356210689").join();
+    client.channels.get("476518277875761153").join();
 });
 
   
